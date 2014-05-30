@@ -160,6 +160,11 @@ p {
     display:none;
 }
 
+.btn-danger {
+    background-color: #cf1b41 !important;
+    border-color: #cf1b41 !important;
+}
+
 /* ========== FOOTER  ========== */
 footer {
   /*position: static;*/
