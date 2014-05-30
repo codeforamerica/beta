@@ -5,13 +5,15 @@ body {
 	font-family: helvetica;
 	color: #666;
 }
-
+p {
+    font-size:1.3em;
+}
 
 .title-parent { 
     position: relative; 
 }
 .full-width-image {
-  background: #ccc url('../img/bg-6.jpg') no-repeat center center;
+  background: #ccc url('../img/bg-5.jpg') no-repeat center center;
   background-size: cover;
   padding: 3em 0;
   margin-bottom: 2.5em;
@@ -50,7 +52,7 @@ body {
 	text-transform: uppercase;
 	top: 2.5em;
 }
-.date-sm{ 
+.date-sm { 
 	left: 6%;
 }
 .location-sm { 
@@ -62,8 +64,6 @@ body {
 .fa-map-marker { 
 	padding-bottom: .2em; margin-left: 17px;
 }
-
-
 
 
 
@@ -99,7 +99,40 @@ body {
 .intro-text {
 	color: #666;
 	font-size: 1em;
-	margin-top: 2em;
+	margin-top: 6em;
+}
+
+/* schedule */
+#schedule {
+    color: #666;
+    margin-top: 6em;
+}
+#schedule .col-md-3 {
+    /* wonky fix for schedule text ... looks weird with the padding */
+    padding-left: 0;
+}
+.boxed {
+    background-color: #ccc;
+    height:8em;
+    color: #fff;
+    padding-top:5px;
+    margin: 0 5px 5px 0;
+}
+.boxed.dark-blue {
+    background-color: #004b6a;
+}
+.boxed.light-blue {
+    background-color: #7ab5d6;
+}
+.boxed.red {
+    background-color: #cf1b41;
+}
+#schedule h2 {
+    margin-top: 0;
+}
+#schedule small {
+    font-size: 12px;
+    font-weight: 800;
 }
 
 .timeline {
@@ -112,8 +145,6 @@ body {
 	color: white;
 }
 
-.main-content {}
-
 .event {
 	min-height: 10em;
 	border: 5px solid #ccc;
@@ -123,6 +154,10 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	padding-top: 4em;
+}
+
+.stroke {
+    display:none;
 }
 
 /* ========== FOOTER  ========== */
@@ -135,19 +170,34 @@ footer {
   text-transform: uppercase;
 }
 
-
+@media (max-width: 991px) {
+    .stroke {
+        display:block;
+    }
+    .stroke hr {
+        width: 100%;
+        border: 0;
+        height:2px;
+        background-color:#ccc;
+        margin-top: 60px;
+    }
+    #schedule {
+        margin-top: 2em;
+    }
+}
 
 @media (min-width: 1201px){
 	.date { padding-left: 8em !important; }
 	.location { padding-right: 8em !important; }
 }
 @media (max-width: 1200px) and (min-width:992px){}
+
 @media (max-width: 991px) and (min-width:768px){
 	.date {
 	text-align: left;
 	text-transform: uppercase;
 	padding-left: 3em !important;
-}
+    }
 
 	.location  {
 		text-align: right;
