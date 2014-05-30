@@ -170,6 +170,12 @@ footer {
   text-transform: uppercase;
 }
 
+footer img {
+    width: 100px;
+    padding-bottom: 20px;
+    opacity: .8;
+}
+
 @media (max-width: 991px) {
     .stroke {
         display:block;
