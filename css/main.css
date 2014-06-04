@@ -1,28 +1,204 @@
-/** {
-	color:#666;
-}*/
+/* --------- Basic Styles --------- */
+
 body {
-	font-family: helvetica;
-	color: #666;
+	font-family: 'proxima-nova', helvetica;
+	
 }
 p {
-    font-size:1.3em;
+	font-size:1.3em;
+	font-weight: 200;
+	color: #666;
+}
+a { color: #399fd3 !important;}
+a:hover { 
+	color: #004b6a !important;
+	text-decoration: none !important;
 }
 
-.title-parent { 
-    position: relative; 
+.shadow {
+	-webkit-box-shadow: inset 0px -17px 27px -10px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0px -17px 27px -10px rgba(0,0,0,0.1);
+	box-shadow: inset 0px -17px 27px -10px rgba(0,0,0,0.1);
 }
+
+/* --------- Header Image --------- */
+
 .full-width-image {
-  background: #ccc url('../img/bg-5.jpg') no-repeat center center;
+  background: #ccc url('../img/mountainbigbw.jpg') no-repeat center center;
   background-size: cover;
   padding: 3em 0;
   margin-bottom: 2.5em;
-  min-height: 20em;
+  height: 30em;
   opacity: 1;
+  background-attachment: fixed;
+}
 
+.beta-tri {
+	height: 15em;
+	width: 16.5em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5em;
+}
+
+.beta-tri-text {
+	text-align: center; 
+	color: white; 
+	font-weight: 200; 
+	margin-top: 1em; 
+	font-size: 1em;
+	text-shadow: 1px 1px #666;
 }
 
 
+/* --------- Intro Text --------- */
+
+.definition {
+	font-size: 2.2em; 
+	padding-top: 1em;
+}
+
+.fa-calendar-o { padding-right: .5em;}
+.fa-map-marker { 
+	padding-left: .2em;
+	padding-right: .7em;
+}
+
+/* --------- Event Details --------- */
+
+.event-details { padding: 2em 0; }
+.event-col {
+	padding-right: 3.2em !important;
+	padding-left: 3.2em !important;
+}
+.btn-eventbrite {
+	color: white !important;
+	margin-top: .8em;
+	padding: .8em !important;
+}
+.btn-eventbrite:hover {color:#ccc !important;}
+.btn-danger {
+    background-color: #cf1b41 !important;
+    border-color: #cf1b41 !important;
+}
+
+/* --------- Schedule --------- */
+
+.beta-schedule{
+	color: white;
+	text-align: center;
+	height: 5em;
+	font-weight: 200;
+	margin-top: 1em;
+
+}
+
+.block-title {
+	font-size:1.3em;
+    font-weight: 400;
+    color: #666;
+    padding-top: 1.8em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.fa-bolt { 
+	padding-right: .5em;
+	margin-top: .2em;
+}
+
+.time {
+	color: #999595;
+	text-align: center;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	height: 2.5em;
+	font-size: .9em;
+}
+
+.mid-blue {padding-top: .9em;}
+.light-blue, .red { padding-top: 1em;}
+.dark-blue, .beta-schedule > .fifteen {padding-top: 1.7em;}
+
+.dark-blue {
+	background-color: #29abe2;
+	background-color: #399fd3;
+}
+.mid-blue {
+	background-color: #6dc5eb;
+	background-color: #3dacd8;
+
+}
+.light-blue {
+	background-color: #97d5f0;
+	background-color: #41b6e5;
+}
+.red {
+	background-color: #f26369;
+	background-color: #cf1b41;
+}
+
+.fifteen {
+	width: 15.34%;
+	height: 100%;
+	float: left;
+}
+.twenty {
+	width: 30.68%;
+	height: 100%;
+	float: left;
+}
+.twentyfive {
+	width: 38.44%;
+	height: 100%;
+	float: left;
+}
+.demos{
+	width: 15.34%;
+	height: 100%;
+	float: left;
+	line-height: 1em;
+}
+
+
+
+
+
+
+/* XXXXXXXXXX UNUSED CODE XXXXXXXXXX */
+
+/*
+
+.details {
+	padding: 1em;
+	margin-top:3em ;
+	color: #333;
+	background-color: #95cbe6;
+}
+
+.heading-cont {
+	padding: 0 !important;
+
+}
+.no-margin { 
+	margin:0 !important;
+	padding: 0 !important;
+	position: relative;
+
+}
+.logo { 
+	position: static;
+	background: url('../img/logos/kavih-02.svg') no-repeat center center;
+	min-height: 160px; 
+}
+.logo-bg {
+	position: relative;
+	background: transparent url('../img/logo-bg1.svg') no-repeat center center;
+	min-height: 120px;
+	background-size: cover;
+	z-index: -1;
+	margin-bottom: 4em;
+}
 .date, .location {
 	color: #b3b3b3;
 	font-size: 1em;
@@ -52,63 +228,18 @@ p {
 	text-transform: uppercase;
 	top: 2.5em;
 }
-.date-sm { 
-	left: 6%;
-}
-.location-sm { 
-	right: 6%;
-}
-.fa-calendar-o { 
-	padding-bottom: .2em; margin-left: 17px;
-}
-.fa-map-marker { 
-	padding-bottom: .2em; margin-left: 17px;
-}
+.date-sm { left: 6%;}
+.location-sm { right: 6%;}
 
 
 
-.date, .location, .logo2 {
-	/*border: 1px solid red;*/
-}
 
-/*.col-centered {
-	float: none;
-	margin: 0 auto;
-}*/
-.no-margin { 
-	margin:0 !important;
-	padding: 0 !important;
-	position: relative;
-
-}
-.logo { 
-	position: static;
-	background: url('../img/logo.svg') no-repeat center center;
-	min-height: 160px; 
-}
-.logo-bg {
-	position: relative;
-	background: transparent url('../img/logo-bg1.svg') no-repeat center center;
-	min-height: 120px;
-	background-size: cover;
-	z-index: -1;
-	margin-bottom: 4em;
-}
-
-
-.intro-text {
-	color: #666;
-	font-size: 1em;
-	margin-top: 6em;
-}
-
-/* schedule */
 #schedule {
     color: #666;
     margin-top: 6em;
 }
 #schedule .col-md-3 {
-    /* wonky fix for schedule text ... looks weird with the padding */
+
     padding-left: 0;
 }
 .boxed {
@@ -159,20 +290,21 @@ p {
 .stroke {
     display:none;
 }
+*/
 
-.btn-danger {
-    background-color: #cf1b41 !important;
-    border-color: #cf1b41 !important;
-}
+
+
+
 
 /* ========== FOOTER  ========== */
 footer {
   /*position: static;*/
+  color: #999;
   padding: 4em 0;
   background-color: #f8f8f8;
   margin-top: 2em;
   border-top: 1px solid #ccc;
-  text-transform: uppercase;
+  margin-top: 4em;
 }
 
 footer img {
@@ -181,10 +313,11 @@ footer img {
     opacity: .8;
 }
 
-@media (max-width: 991px) {
-    .stroke {
-        display:block;
-    }
+
+/* ========== MEDIA QUERIES  ========== */
+
+/*@media (max-width: 991px) {
+    .stroke {display:block;}
     .stroke hr {
         width: 100%;
         border: 0;
@@ -192,16 +325,16 @@ footer img {
         background-color:#ccc;
         margin-top: 60px;
     }
-    #schedule {
-        margin-top: 2em;
-    }
-}
+    #schedule { margin-top: 2em;}
+}*/
 
 @media (min-width: 1201px){
 	.date { padding-left: 8em !important; }
 	.location { padding-right: 8em !important; }
 }
-@media (max-width: 1200px) and (min-width:992px){}
+@media (max-width: 1200px) and (min-width:992px){
+	.first {padding-top: 0;}
+}
 
 @media (max-width: 991px) and (min-width:768px){
 	.date {
@@ -215,8 +348,29 @@ footer img {
 		text-transform: uppercase;
 		padding-right: 3em !important;
 	}
+	.first {padding-top: 0;}
+
 }
 
+@media (max-width: 767px){}
+	.date {
+	text-align: left;
+	text-transform: uppercase;
+	padding-left: 2em !important;
+	padding-right: 0 !important;
+}
+
+	.location  {
+		text-align: right;
+		text-transform: uppercase;
+		padding-right: 2em !important;
+
+	}
+	.event-padding {padding-top: 2em}
+	.first {padding-top: 0;}
+}
+
+/*
 @media (max-width: 767px) and (min-width:590px){
 	.date {
 	text-align: left;
@@ -231,10 +385,14 @@ footer img {
 		padding-right: 2em !important;
 
 	}
+	.event-padding {padding-top: 2em}
+	.first {padding-top: 0;}
 }
 
 @media (max-width: 589px) {
 	.date, .location {display: none;}
 	.logo2 {width: 100% !important; }
 	.date-sm, .location-sm {display: inline;}
-}
+	.event-col {padding-top: 2em}
+	.first {padding-top: 0;}
+}*/
