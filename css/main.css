@@ -1,4 +1,4 @@
-/* --------- Basic Styles --------- */
+ --------- Basic Styles --------- */
 
 body {
 	font-family: 'proxima-nova', helvetica;
@@ -24,7 +24,7 @@ a:hover {
 /* --------- Header Image --------- */
 
 .full-width-image {
-  background: #ccc url('../img/mountainbigbw.jpg') no-repeat center center;
+  background: #ccc url('../img/tools_bg_blue.jpg') no-repeat center center;
   background-size: cover;
   padding: 3em 0;
   margin-bottom: 2.5em;
@@ -38,16 +38,43 @@ a:hover {
 	width: 16.5em;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 5em;
+	margin-top: 2em;
+
 }
 
 .beta-tri-text {
 	text-align: center; 
 	color: white; 
-	font-weight: 200; 
+	font-weight: 400; 
 	margin-top: 1em; 
-	font-size: 1em;
-	text-shadow: 1px 1px #666;
+	font-size: 2em;
+	text-shadow: 2px 2px #666;
+	/*text-transform: uppercase;*/
+
+}
+
+
+/* --------- DATE/LOCATION --------- */
+
+.details {position: relative;}
+.ribbon {
+	position: absolute;
+	top: -2.8em;
+}
+
+.details-time, .details-location {
+	color: #999; 
+	font-size: 1.3em;
+	margin: 2em 0;
+}
+
+/*.details-time>a, .details-location>a {
+	margin-bottom: 2em;
+}*/
+.fa-calendar-o { padding-right: .5em;}
+.fa-map-marker { 
+	padding-left: .5em;
+	/*padding-right: .5em;*/
 }
 
 
@@ -58,11 +85,7 @@ a:hover {
 	padding-top: 1em;
 }
 
-.fa-calendar-o { padding-right: .5em;}
-.fa-map-marker { 
-	padding-left: .2em;
-	padding-right: .7em;
-}
+
 
 /* --------- Event Details --------- */
 
@@ -97,7 +120,7 @@ a:hover {
 	font-size:1.3em;
     font-weight: 400;
     color: #666;
-    padding-top: 1.8em;
+    padding-top: 1.8em !important;
     text-align: center;
     margin-bottom: 2em;
 }
@@ -135,7 +158,7 @@ a:hover {
 }
 .red {
 	background-color: #f26369;
-	background-color: #cf1b41;
+	background-color: #45c5ed;
 }
 
 .fifteen {
@@ -290,8 +313,8 @@ a:hover {
 .stroke {
     display:none;
 }
-*/
 
+*/
 
 
 
@@ -330,10 +353,10 @@ footer img {
 
 @media (min-width: 1201px){
 	.date { padding-left: 8em !important; }
-	.location { padding-right: 8em !important; }
+	/*.location { padding-right: 8em !important; }*/
 }
 @media (max-width: 1200px) and (min-width:992px){
-	.first {padding-top: 0;}
+	.block-title.first {padding-top: 0;}
 }
 
 @media (max-width: 991px) and (min-width:768px){
@@ -343,12 +366,12 @@ footer img {
 	padding-left: 3em !important;
     }
 
-	.location  {
+/*	.location  {
 		text-align: right;
 		text-transform: uppercase;
 		padding-right: 3em !important;
-	}
-	.first {padding-top: 0;}
+	}*/
+	.block-title.first {padding-top: 0;}
 
 }
 
@@ -359,15 +382,15 @@ footer img {
 	padding-left: 2em !important;
 	padding-right: 0 !important;
 }
-
+/*
 	.location  {
 		text-align: right;
 		text-transform: uppercase;
 		padding-right: 2em !important;
 
-	}
+	}*/
 	.event-padding {padding-top: 2em}
-	.first {padding-top: 0;}
+	.block-title.first {padding-top: 0;}
 }
 
 /*
@@ -395,4 +418,4 @@ footer img {
 	.date-sm, .location-sm {display: inline;}
 	.event-col {padding-top: 2em}
 	.first {padding-top: 0;}
-}*/
+}
