@@ -10,10 +10,10 @@ p {
 	font-weight: 200;
 	color: #666;
 }
-a { color: #399fd3 !important;}
+a { color: #399fd3;}
 a:hover { 
-	color: #004b6a !important;
-	text-decoration: none !important;
+	color: #004b6a;
+	text-decoration: none;
 }
 
 .shadow {
